@@ -235,7 +235,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1148030144891462014}
+  - {fileID: 1148030144891462018}
   - {fileID: 1007184204849694721}
   - {fileID: 3299795200682133184}
   - {fileID: 2713635036052612130}
@@ -363,15 +363,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3434922613620526954, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
+      propertyPath: m_Size.x
+      value: 2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434922613620526954, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434922613620526954, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8075546788612289982, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
       propertyPath: m_Name
       value: Joueur
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
---- !u!4 &1148030144891462014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1237993119197961256, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
+--- !u!224 &1148030144891462018 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4255503842102568842, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
   m_PrefabInstance: {fileID: 1148030144891462013}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2713635036052612129
@@ -381,6 +393,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915548796}
     m_Modifications:
+    - target: {fileID: 3047557503124813876, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047557503124813876, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
+      propertyPath: m_Size.y
+      value: 1.16
+      objectReference: {fileID: 0}
     - target: {fileID: 3311425170043619615, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
       propertyPath: m_Name
       value: VilainBoulet
@@ -390,12 +410,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8711371276263436561, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711371276263436561, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711371276263436561, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.46
+      value: 7.4382
       objectReference: {fileID: 0}
     - target: {fileID: 8711371276263436561, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 0.4018
       objectReference: {fileID: 0}
     - target: {fileID: 8711371276263436561, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -495,6 +523,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5867687893984852150, guid: 331ce8b4164c8fa42a577d26e21fe4b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f66c60fb167a0f4299a9865ef4badc9, type: 3}
     - target: {fileID: 5867687893984852150, guid: 331ce8b4164c8fa42a577d26e21fe4b9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

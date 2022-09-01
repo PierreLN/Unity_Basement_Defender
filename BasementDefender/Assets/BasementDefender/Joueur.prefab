@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1763033797878683803}
   - component: {fileID: 669065901041543660}
   - component: {fileID: 8893655725412622108}
+  - component: {fileID: -7493593506657315007}
   m_Layer: 0
   m_Name: Joueur
   m_TagString: Untagged
@@ -40,7 +41,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -7.12, y: 0.23}
   m_SizeDelta: {x: 2.3, y: 1.6}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!212 &2920289767877034361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127,7 +128,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8075546788612289982}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -158,8 +159,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 2.3
+    height: 1.6
   m_margins: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8893655725412622108
 MonoBehaviour:
@@ -173,3 +174,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5766f3c7d7bf34eb80dcd6260158a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vitesse: 0.01
+--- !u!114 &-7493593506657315007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075546788612289982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5766f3c7d7bf34eb80dcd6260158a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesse: 0.01
