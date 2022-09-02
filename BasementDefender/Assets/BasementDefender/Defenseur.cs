@@ -17,7 +17,7 @@ public class Defenseur : MonoBehaviour
     void FixedUpdate()
     {
         // input manager pour gerer le clavier / souris
-        float vertical = Input.GetAxis("Vertical") * 1000;
+        float vertical = Input.GetAxis("Vertical") * 200;
 
         // Debug.Log(vertical);
 

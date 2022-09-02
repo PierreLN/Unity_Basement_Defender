@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5867687893984852150}
   - component: {fileID: 4095547578868194378}
   - component: {fileID: 5174858057213464504}
+  - component: {fileID: 2281177229398669831}
   m_Layer: 0
   m_Name: Source
   m_TagString: Untagged
@@ -120,7 +121,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5955299793186481378}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -133,3 +134,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2281177229398669831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955299793186481378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbecc7cef78415d41a6547f02b99c2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  villainBoulet: {fileID: 3311425170043619615, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
