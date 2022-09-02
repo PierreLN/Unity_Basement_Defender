@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4095547578868194378}
   - component: {fileID: 5174858057213464504}
   - component: {fileID: 2281177229398669831}
+  - component: {fileID: -631906516612759221}
   m_Layer: 0
   m_Name: Source
   m_TagString: Untagged
@@ -73,10 +74,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -800046761
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f4ea53398839234fb3e3aceb76b36a5, type: 3}
   m_Color: {r: 0.22633421, g: 1, b: 0.02352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +105,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 10.8, y: 10.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   villainBoulet: {fileID: 3311425170043619615, guid: 6666ca6be3cecf741baa79640eaf46f1, type: 3}
+--- !u!114 &-631906516612759221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955299793186481378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbecc7cef78415d41a6547f02b99c2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  villainBoulet: {fileID: 0}

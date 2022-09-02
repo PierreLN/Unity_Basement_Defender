@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Defenseur : MonoBehaviour
 {
@@ -28,5 +29,11 @@ public class Defenseur : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, -limite, limite);
 
         transform.position = pos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene("test1");
+        
     }
 }
