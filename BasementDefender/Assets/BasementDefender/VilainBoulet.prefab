@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6131985766765293341}
   - component: {fileID: 2589057738508739230}
   - component: {fileID: 3047557503124813876}
+  - component: {fileID: -6517831212983483785}
   m_Layer: 0
   m_Name: VilainBoulet
   m_TagString: Untagged
@@ -133,3 +134,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1.7}
   m_EdgeRadius: 0
+--- !u!114 &-6517831212983483785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311425170043619615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fba09e4df286348bf13b2d68437ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesse: -0.01
