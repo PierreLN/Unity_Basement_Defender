@@ -8,6 +8,9 @@ public class Defenseur : MonoBehaviour
     public float vitesse = 0.1f;
     public float limite = 3.0f;
     public GameObject sheep;
+
+    public float delayInput = 1f;
+    public float timer = 0.0f;
     
 
     // Start is called before the first frame update
@@ -22,10 +25,13 @@ public class Defenseur : MonoBehaviour
         // input manager pour gerer le clavier / souris
         float vertical = Input.GetAxis("Vertical") * 200;
         Vector3 delta = new Vector3(1.0f, 0.0f, 0.0f);
-        if (Input.GetButton("Fire1"))
+
+        if (Input.GetButton("Fire1") && timer <= 0.0f)
         {
             Instantiate(sheep, transform.position + delta, Quaternion.identity);
+            timer = delayInput;
         }
+        timer -= Time.deltaTime;
 
         // Debug.Log(vertical);
 
@@ -44,7 +50,7 @@ public class Defenseur : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //SceneManager.LoadScene("test1");
+        SceneManager.LoadScene("test1");
         
     }
 }
