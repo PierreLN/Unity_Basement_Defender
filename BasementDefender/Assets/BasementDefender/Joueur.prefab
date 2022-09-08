@@ -175,4 +175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesse: 0.1
   limite: 3
-  sheep: {fileID: 6530007572213650668, guid: f54156756683226419f213aec8627898, type: 3}
+  balle: {fileID: 6530007572213650668, guid: f54156756683226419f213aec8627898, type: 3}
+  delayInput: 0.2
+  timer: 0

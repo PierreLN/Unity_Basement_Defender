@@ -7,9 +7,9 @@ public class Defenseur : MonoBehaviour
 {
     public float vitesse = 0.1f;
     public float limite = 3.0f;
-    public GameObject sheep;
+    public GameObject balle;
 
-    public float delayInput = 1f;
+    public float delayInput = 0.2f;
     public float timer = 0.0f;
     
 
@@ -28,11 +28,11 @@ public class Defenseur : MonoBehaviour
 
         if (Input.GetButton("Fire1") && timer <= 0.0f)
         {
-            Instantiate(sheep, transform.position + delta, Quaternion.identity);
+            Instantiate(balle, transform.position + delta, Quaternion.identity);
             timer = delayInput;
         }
         timer -= Time.deltaTime;
-
+            
         // Debug.Log(vertical);
 
         // fixedDeltaTime pour diviser par 1/30 de sec

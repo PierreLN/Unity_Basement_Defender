@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6123732729904362184}
   - component: {fileID: -1320379126798349774}
   m_Layer: 0
-  m_Name: Circle (1)
+  m_Name: balle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
