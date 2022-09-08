@@ -7,6 +7,8 @@ public class Defenseur : MonoBehaviour
 {
     public float vitesse = 0.1f;
     public float limite = 3.0f;
+    public GameObject sheep;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,11 @@ public class Defenseur : MonoBehaviour
     {
         // input manager pour gerer le clavier / souris
         float vertical = Input.GetAxis("Vertical") * 200;
+        Vector3 delta = new Vector3(1.0f, 0.0f, 0.0f);
+        if (Input.GetButton("Fire1"))
+        {
+            Instantiate(sheep, transform.position + delta, Quaternion.identity);
+        }
 
         // Debug.Log(vertical);
 
@@ -29,11 +36,15 @@ public class Defenseur : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, -limite, limite);
 
         transform.position = pos;
+
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("test1");
+        //SceneManager.LoadScene("test1");
         
     }
 }

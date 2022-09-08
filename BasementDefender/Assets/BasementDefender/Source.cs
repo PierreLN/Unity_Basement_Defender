@@ -8,7 +8,7 @@ public class Source : MonoBehaviour
 
     private float limit = 3.0f;
     private float accumulateurTemps = 0.0f;
-    private float temps = 6.0f;
+    private float temps = 10.0f;
 
     // Start is called before the first frame update
     void Start()

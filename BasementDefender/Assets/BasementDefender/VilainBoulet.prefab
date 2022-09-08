@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6131985766765293341}
   - component: {fileID: 2589057738508739230}
   - component: {fileID: 3047557503124813876}
-  - component: {fileID: -6517831212983483785}
+  - component: {fileID: 9097161517645546591}
   m_Layer: 0
   m_Name: VilainBoulet
   m_TagString: Untagged
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 3311425170043619615}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1.7}
   m_EdgeRadius: 0
---- !u!114 &-6517831212983483785
+--- !u!114 &9097161517645546591
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,4 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fba09e4df286348bf13b2d68437ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: -0.01
+  vitesse: -0.2
+  limit: 0.05

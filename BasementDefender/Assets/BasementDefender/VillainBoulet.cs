@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class VillainBoulet : MonoBehaviour
 {
-    public float vitesse = -1f;
+    public float vitesse = -0.2f;
+    public float limit = 0.05f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +16,8 @@ public class VillainBoulet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(new Vector3(vitesse*10, 0.0f, 0.0f));
+        float acceleration = Random.Range(-limit, limit);
+        transform.Translate(new Vector3(vitesse+acceleration, 0.0f, 0.0f));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
