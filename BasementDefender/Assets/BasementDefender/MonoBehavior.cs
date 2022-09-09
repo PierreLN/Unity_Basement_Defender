@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonoBehavior : MonoBehaviour
 {
     public float vitesse = -0.0005f;
-    public float limite = 16.0f;
+    public float limite = 10.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +16,14 @@ public class MonoBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(new Vector3(vitesse, 0.0f, 0.0f));
         Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, limite, 1000000.0f);
-        transform.position = pos;
-        
+
+        if (pos.x > limite){
+            transform.Translate(new Vector3(vitesse, 0.0f, 0.0f));
+        }
+        else
+        {
+            transform.Translate(new Vector3(0.0f, 0.0f, 0.0f));
+        }
     }
 }

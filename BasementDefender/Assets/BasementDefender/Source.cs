@@ -31,7 +31,7 @@ public class Source : MonoBehaviour
         if (accumulateurTemps > temps)
         {
             float hauteur = Random.Range(-limit, limit);
-            Vector3 delta = new Vector3(0.0f, hauteur, 0.0f);
+            Vector3 delta = new Vector3(-7.0f, hauteur, 0.0f);
             Instantiate(villainBoulet, transform.position + delta, Quaternion.identity);
             accumulateurTemps = 0.0f;
             float ratio = Time.time+0.1f/0.5f;
