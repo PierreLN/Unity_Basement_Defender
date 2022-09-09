@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2920289767877034361}
   - component: {fileID: 3434922613620526954}
   - component: {fileID: 1763033797878683803}
-  - component: {fileID: 669065901041543660}
   - component: {fileID: 4579162756479862156}
   m_Layer: 0
   m_Name: Joueur
@@ -140,27 +139,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &669065901041543660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8075546788612289982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d40088a6124c578ad6b428df586e2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_pivot: {x: 0, y: 0}
-  m_anchorPosition: 4
-  m_rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 2.3
-    height: 1.6
-  m_margins: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4579162756479862156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesse: 0.1
   limite: 3
-  balle: {fileID: 6530007572213650668, guid: f54156756683226419f213aec8627898, type: 3}
+  balle: {fileID: 0}
   delayInput: 0.2
   timer: 0
+  delta: {x: 1, y: 0, z: 0}

@@ -11,12 +11,13 @@ public class Defenseur : MonoBehaviour
 
     public float delayInput = 0.2f;
     public float timer = 0.0f;
-    
+
+    public Vector3 delta = new Vector3(1.0f, 0.0f, 0.0f);
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class Defenseur : MonoBehaviour
     {
         // input manager pour gerer le clavier / souris
         float vertical = Input.GetAxis("Vertical") * 200;
-        Vector3 delta = new Vector3(1.0f, 0.0f, 0.0f);
+
 
         if (Input.GetButton("Fire1") && timer <= 0.0f)
         {
@@ -34,7 +35,6 @@ public class Defenseur : MonoBehaviour
         timer -= Time.deltaTime;
             
         // Debug.Log(vertical);
-
         // fixedDeltaTime pour diviser par 1/30 de sec
         transform.Translate(new Vector3(0.0f, vitesse * Time.fixedDeltaTime * vertical, 0.0f));
 
@@ -42,15 +42,10 @@ public class Defenseur : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, -limite, limite);
 
         transform.position = pos;
-
-
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("test1");
-        
+        SceneManager.LoadScene("test1"); 
     }
 }

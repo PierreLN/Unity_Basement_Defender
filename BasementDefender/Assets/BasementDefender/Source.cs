@@ -25,10 +25,9 @@ public class Source : MonoBehaviour
     {
         // Chronometre old version
 
-        
         accumulateurTemps += Time.fixedDeltaTime;
 
-        if (accumulateurTemps > temps)
+        if (accumulateurTemps * 2 > temps)
         {
             float hauteur = Random.Range(-limit, limit);
             Vector3 delta = new Vector3(-7.0f, hauteur, 0.0f);

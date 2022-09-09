@@ -128,7 +128,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4733628611460149393, guid: f3fb1cd875b49eb408eb3da64d2a7742, type: 3}
   m_PrefabInstance: {fileID: 364310789}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &96128710
+--- !u!114 &96128713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: -0.0005
-  limite: 16
+  limite: 10
 --- !u!1 &342153034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8075546788612289982, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
@@ -164,6 +164,7 @@ MonoBehaviour:
   balle: {fileID: 6530007572213650668, guid: f54156756683226419f213aec8627898, type: 3}
   delayInput: 0.2
   timer: 0
+  delta: {x: 1, y: 0, z: 0}
 --- !u!1001 &364310789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -673,7 +674,7 @@ PrefabInstance:
       value: Joueur
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 669065901041543660, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 4579162756479862156, guid: e934f56a2668f1641b5253f69c1702f3, type: 3}
