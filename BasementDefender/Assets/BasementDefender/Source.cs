@@ -31,7 +31,9 @@ public class Source : MonoBehaviour
         {
             float hauteur = Random.Range(-limit, limit);
             Vector3 delta = new Vector3(-7.0f, hauteur, 0.0f);
-            Instantiate(villainBoulet, transform.position + delta, Quaternion.identity);
+            GameObject vilainvil = Instantiate(villainBoulet, transform.position + delta, Quaternion.identity);
+
+            vilainvil.transform.Rotate(new Vector3(0.0f, 0.0f, 1.0f), 90.0f);
             accumulateurTemps = 0.0f;
             float ratio = Time.time+0.1f/0.5f;
             temps = Random.Range(0.3f/ratio,1.0f/ratio);

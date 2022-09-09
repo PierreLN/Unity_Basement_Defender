@@ -12,7 +12,7 @@ public class Defenseur : MonoBehaviour
     public float delayInput = 0.2f;
     public float timer = 0.0f;
 
-    public Vector3 delta = new Vector3(3.0f, 0.0f, 0.0f);
+    public Vector3 delta = new Vector3(1.0f, 0.0f, 0.0f);
 
 
     // Start is called before the first frame update
